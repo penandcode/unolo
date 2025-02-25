@@ -36,7 +36,7 @@ export default function Homepage({ user }) {
                     <button onClick={() => { localStorage.clear(); window.location.reload() }}>Logout</button>
                 </div>
             ) : (
-                <button onClick={handleLogin}>Sign in with Google</button>
+                <button className="border-2 border-gray-400 text-gray-800 font-bold hover:cursor-pointer p-2 rounded-lg bg-amber-200" onClick={handleLogin}>Sign in with Google</button>
             )}
         </div>
     );
